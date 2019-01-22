@@ -1,0 +1,13 @@
+<h1>안녕하세요, 여기서 글자를 세봅시다.</h1>
+
+<!-- 1. 사용자에게 입력을 받아야 하는 공간
+2. about이라는 페이지랑 링크로 연결
+3. 제출 버튼 필요 -->
+
+<a href ="{%url 'about'%}">ABOUT</a>
+
+<form action="{%url 'result'%}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!">
+</form>
